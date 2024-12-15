@@ -109,4 +109,115 @@ Szenen werden in JSON-Format definiert. Ein Beispiel:
 - [ ] Python-Scripting-Aufgaben
 
 
+# CompTIA SecGame
+
+A text-based learning game to prepare for the CompTIA Security+ certification. Players take on the role of a Security Analyst and learn IT security fundamentals through practical scenarios and interactive stories.
+
+## 🎯 Features
+
+- Interactive story-based learning environment
+- Practical scenarios from IT security
+- Progress saving
+- Integration of security tools (planned)
+- Various learning paths and difficulty levels (planned)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Python 3.12 or higher
+- pip (Python Package Manager)
+
+### Installation
+
+1. Clone repository:
+```bash
+git clone https://github.com/yourusername/CompTiaSecGame.git
+cd CompTiaSecGame
+```
+
+2. Create and activate virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# or
+.venv\Scripts\activate     # Windows
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Start game:
+```bash
+python main.py
+```
+
+## 📁 Project Structure
+
+```
+ComptiaSecGame/
+├── game_engine/          # Game logic
+│   ├── engine.py        # Main game engine
+│   ├── scene_manager.py # Scene management
+│   ├── player.py        # Player data
+│   └── save_system.py   # Save system
+├── content/             # Game content
+│   └── day1/           # Content for day 1
+│       ├── scenes.json  # Scene definitions
+│       └── dialogues.json
+├── data/               # Player data
+│   └── saves/          # Save states
+├── utils/             # Helper functions
+│   └── text_handler.py
+├── docs/              # Documentation
+├── requirements.txt   # Project dependencies
+├── README.md         # Project documentation
+└── main.py          # Main entry point
+```
+
+## 🎮 Game Mechanics
+
+The game is based on a text-based user interface where players navigate through various scenarios and make decisions. The main components are:
+
+- Story Mode: Follows a Security Analyst through their workday
+- Practice Mode: Separate exercises for specific security topics
+- Knowledge Base: Reference guide for security concepts
+
+## 🛠️ Development
+
+### Adding New Scenes
+
+Scenes are defined in JSON format. Example:
+
+```json
+{
+    "scene_id": {
+        "text": "Scene description",
+        "choices": [
+            {
+                "text": "Choice option 1",
+                "next_scene": "id_of_next_scene"
+            }
+        ]
+    }
+}
+```
+
+### Code Conventions
+
+- PEP 8 Style Guide for Python code
+- Docstrings for all functions and classes
+- Typing with Python Type Hints
+- Detailed comments for complex logic
+
+## 📝 Planned Features
+
+- [ ] Graphical User Interface
+- [ ] YARA rules integration
+- [ ] Python scripting tasks
+
+
+
 
