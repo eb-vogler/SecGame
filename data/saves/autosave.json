@@ -1,20 +1,12 @@
 {
   "player": {
-    "name": "Andreas",
+    "name": "",
     "progress": {
       "current_day": 1,
-      "current_scene": "security_culture_talk",
-      "completed_scenes": [
-        "intro_badge_scanner",
-        "intro_security_process",
-        "intro_documentation",
-        "morning_arrival",
-        "office_tour",
-        "tour_alarm_smart",
-        "security_culture_talk"
-      ],
+      "current_scene": "intro",
+      "completed_scenes": [],
       "achievements": []
     }
   },
-  "timestamp": "2024-12-15T18:46:04.731389"
+  "timestamp": "2024-12-15T21:10:17.662914"
 }

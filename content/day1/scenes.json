@@ -104,7 +104,7 @@
             },
             {
                 "text": "Klingt teuer...",
-                "next_scene": "cost_vs_security"
+                "next_scene": "cia_overview"
             }
         ]
     },
@@ -129,10 +129,6 @@
         "text": "'Vertraulichkeit ist wie ein Geheimnis - nur die richtigen Leute dürfen es kennen. Wir nutzen:\n\n- Verschlüsselung\n- Zugriffskontrollen\n- Das Minimalprinzip\n\nApropos, da vorne arbeitet unser Encryption-Team...'",
         "choices": [
             {
-                "text": "Was ist das Minimalprinzip?",
-                "next_scene": "least_privilege"
-            },
-            {
                 "text": "Weiter zu den Kontrollen",
                 "next_scene": "controls_intro"
             }
@@ -141,10 +137,7 @@
     "integrity_check": {
         "text": "Sarah zeigt auf einen Monitor mit kryptischen Zahlen. 'Das sind Hash-Werte. Sie garantieren die Integrität unserer Systeme. Wie ein digitaler Fingerabdruck - kleinste Änderung, komplett anderer Hash!'",
         "choices": [
-            {
-                "text": "Wie erkennen wir Manipulation?",
-                "next_scene": "detective_controls"
-            },
+
             {
                 "text": "Weiter zu den Kontrollen",
                 "next_scene": "controls_intro"
@@ -195,11 +188,11 @@
         "choices": [
             {
                 "text": "Absolut! Bring it on!",
-                "next_scene": "day_complete"
+                "next_scene": "security_training"
             },
             {
                 "text": "Kann ich nochmal was nachschauen?",
-                "next_scene": "knowledge_base"
+                "next_scene": "security_training"
             }
         ]
     },
@@ -212,7 +205,7 @@
             },
             {
                 "text": "Können wir die Grundlagen nochmal durchgehen?",
-                "next_scene": "basics_review"
+                "next_scene": "control_functions"
             }
         ]
     },
@@ -233,6 +226,16 @@
             }
         ]
     },
+     "scenario_one_wrong": {
+        "text": "'Verdammt nein! Nochmal",
+        "choices": [
+            {
+                "text": "Okay ich versuchs nochmal",
+                "next_scene": "scenario_one"
+            }
+        ]
+    },
+
     "scenario_one_correct": {
         "text": "'Exakt!' Sarah nickt anerkennend. 'Wenn Daten verändert werden, ist das ein Integritätsproblem. Die CIA-Triade ist der Grundpfeiler unserer Arbeit. Bereit für das nächste Szenario?'",
         "choices": [
@@ -272,6 +275,15 @@
             }
         ]
     },
+     "scenario_two_wrong": {
+        "text": "'Verdammt nein! Nochmal",
+        "choices": [
+            {
+                "text": "Okay ich versuchs nochmal",
+                "next_scene": "scenario_two"
+            }
+        ]
+    },
     "data_protection": {
         "text": "'Lass uns über Datenschutz sprechen. Wir haben Daten:\n- In der Datenbank (at rest)\n- Beim Senden (in transit)\n- Bei der Verarbeitung (in use)\n\nWelche sind am verwundbarsten?'",
         "choices": [
@@ -290,15 +302,24 @@
         "choices": [
             {
                 "text": "Präventive Kontrollen",
-                "next_scene": "preventive_discussion"
+                "next_scene": "control_types_wrong"
             },
             {
                 "text": "Erkennende Kontrollen",
-                "next_scene": "detective_discussion"
+                "next_scene": "control_types_wrong"
             },
             {
                 "text": "Abschreckende Kontrollen",
                 "next_scene": "deterrent_discussion"
+            }
+        ]
+    },
+     "control_types_wrong": {
+        "text": "'Verdammt nein! Nochmal",
+        "choices": [
+            {
+                "text": "Okay ich versuchs nochmal",
+                "next_scene": "control_types"
             }
         ]
     },
@@ -432,7 +453,7 @@
         "choices": [
             {
                 "text": "Super, lass uns anfangen!",
-                "next_scene": "first_task"
+                "next_scene": "office_tour"
             }
         ]
     },
@@ -441,11 +462,11 @@
         "choices": [
             {
                 "text": "Puh, Lektion gelernt! Zero Trust ist das Zauberwort.",
-                "next_scene": "first_task"
+                "next_scene": "office_tour"
             },
             {
                 "text": "Oh man, dabei sah das USB-Stick-Geschenk so verlockend aus...",
-                "next_scene": "first_task"
+                "next_scene": "office_tour"
             }
         ]
     },
@@ -459,11 +480,8 @@
             {
                 "text": "Nach dem Notfallplan fragen",
                 "next_scene": "tour_alarm_smart"
-            },
-            {
-                "text": "Erstmal entspannt weitergehen",
-                "next_scene": "tour_alarm_fail"
             }
+
         ]
     },
     "tour_alarm_fail": {
@@ -585,6 +603,95 @@
             {
                 "text": "Ständige Überwachung?",
                 "next_scene": "monitoring_lesson"
+            }
+        ]
+    },
+    "confidentiality_lesson": {
+        "text": "'Vertraulichkeit... das ist einer der kritischsten Aspekte in der Sicherheit. Wir müssen sicherstellen, dass vertrauliche Daten nur für die richtigen Personen zugänglich sind.'\n\n'Sarah fährt fort: 'Dafür nutzen wir Dinge wie Zugriffskontrolllisten, Verschlüsselung und genau definierte Nutzerrollen.'",
+        "choices": [
+            {
+                "text": "Wie funktioniert so eine Verschlüsselung?",
+                "next_scene": "encryption_lesson"
+            },
+            {
+                "text": "Wie stellen wir sicher, dass niemand unbefugt Zugriff erhält?",
+                "next_scene": "access_control_lesson"
+            }
+        ]
+    },
+    "encryption_lesson": {
+        "text": "'Verschlüsselung ist wie ein Geheimcode. Wenn Daten verschlüsselt sind, können sie ohne den passenden Schlüssel nicht gelesen werden. Selbst wenn jemand sie stiehlt, bringt es ihm nichts.'",
+        "choices": [
+            {
+                "text": "Klingt logisch. Was ist der Schwachpunkt?",
+                "next_scene": "encryption_risks"
+            }
+        ]
+    },
+    "encryption_risks": {
+        "text": "'Der Schwachpunkt liegt oft in der Schlüsselsicherheit. Wenn jemand Zugriff auf den Schlüssel hat, kann er alles entschlüsseln. Deshalb ist die Schlüsselverwaltung ein eigener Sicherheitsbereich.'",
+        "choices": [
+            {
+                "text": "Was können wir tun, um die Schlüssel zu schützen?",
+                "next_scene": "key_management_lesson"
+            }
+        ]
+    },
+    "key_management_lesson": {
+        "text": "'Die Schlüssel werden in speziellen Hardware Security Modulen (HSM) oder ähnlichen Lösungen aufbewahrt. Zusätzlich nutzen wir starke Authentifizierung und Zugriffsprotokolle. Klingt kompliziert? Ist es manchmal auch, aber extrem wichtig!'",
+        "choices": [
+            {
+                "text": "Das ergibt Sinn. Was war die nächste Lektion?",
+                "next_scene": "monitoring_lesson"
+            }
+        ]
+    },
+    "monitoring_lesson": {
+        "text": "'Überwachung ist die Grundlage für den Schutz unserer Systeme', sagt Sarah. 'Wir sammeln kontinuierlich Daten über den Systemstatus, Netzwerkverkehr und Nutzeraktivitäten.'\n\n'Sarah weist auf einen Bildschirm: 'Sieh dir das an – unser SIEM-System (Security Information and Event Management) aggregiert all diese Daten und gibt uns Alarme für ungewöhnliche Aktivitäten.'",
+        "choices": [
+            {
+                "text": "Klingt sinnvoll. Welche Aktivitäten werden überwacht?",
+                "next_scene": "monitoring_details"
+            },
+            {
+                "text": "Was passiert, wenn ein Alarm ausgelöst wird?",
+                "next_scene": "alarm_response"
+            }
+        ]
+    },
+    "monitoring_details": {
+        "text": "'Wir überwachen Anmeldeversuche, Netzwerkverbindungen, Dateiänderungen und vieles mehr. Sogar CPU-Lastspitzen können ein Hinweis auf einen Angriff sein. Alles wird protokolliert – so haben wir immer eine Spur.'",
+        "choices": [
+            {
+                "text": "Was machen wir mit den Protokollen?",
+                "next_scene": "log_analysis"
+            }
+        ]
+    },
+    "log_analysis": {
+        "text": "'Logfiles sind wie das Tagebuch der IT. Sie zeigen uns, was wann passiert ist. Unsere Security-Tools analysieren diese Daten automatisch und markieren potenzielle Sicherheitsereignisse.'",
+        "choices": [
+            {
+                "text": "Wie verhindert das Angriffe?",
+                "next_scene": "monitoring_prevention"
+            }
+        ]
+    },
+    "monitoring_prevention": {
+        "text": "'Durch Überwachung erkennen wir Bedrohungen frühzeitig und können sie im Keim ersticken. Es ist wie ein Rauchmelder – er verhindert keinen Brand, aber alarmiert uns so früh, dass wir reagieren können.'",
+        "choices": [
+            {
+                "text": "Ich verstehe. Lass uns weitermachen!",
+                "next_scene": "day_summary"
+            }
+        ]
+    },
+    "alarm_response": {
+        "text": "'Wenn ein Alarm ausgelöst wird, tritt unser Incident-Response-Plan in Kraft. Wir prüfen die Alarme, isolieren betroffene Systeme und beheben das Problem so schnell wie möglich.'",
+        "choices": [
+            {
+                "text": "Dieser Plan ist wirklich umfassend!",
+                "next_scene": "day_summary"
             }
         ]
     }
