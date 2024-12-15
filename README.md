@@ -1,6 +1,6 @@
 #  SecGame
 
-Ein textbasiertes Lernspiel zur Vorbereitung auf die CompTIA Security+ Zertifizierung. Die Spieler schlüpfen in die Rolle eines Security Analysten und lernen durch praktische Szenarien und interaktive Geschichten die Grundlagen der IT-Sicherheit.
+Ein textbasiertes Lernspiel zur Vorbereitung auf die Cybersecurity. Die Spieler schlüpfen in die Rolle eines Security Analysten und lernen durch praktische Szenarien und interaktive Geschichten die Grundlagen der IT-Sicherheit.
 
 ## 🎯 Features
 
@@ -21,7 +21,7 @@ Ein textbasiertes Lernspiel zur Vorbereitung auf die CompTIA Security+ Zertifizi
 
 1. Repository klonen:
 ```bash
-git clone https://github.com/yourusername/CompTiaSecGame.git
+git clone https://github.com/yourusername/SecGame.git
 cd CompTiaSecGame
 ```
 
@@ -111,7 +111,7 @@ Szenen werden in JSON-Format definiert. Ein Beispiel:
 
 #  SecGame
 
-A text-based learning game to prepare for the CompTIA Security+ certification. Players take on the role of a Security Analyst and learn IT security fundamentals through practical scenarios and interactive stories.
+A text-based learning game to prepare for the Cybersecurity. Players take on the role of a Security Analyst and learn IT security fundamentals through practical scenarios and interactive stories.
 
 ## 🎯 Features
 
@@ -132,7 +132,7 @@ A text-based learning game to prepare for the CompTIA Security+ certification. P
 
 1. Clone repository:
 ```bash
-git clone https://github.com/yourusername/CompTiaSecGame.git
+git clone https://github.com/yourusername/SecGame.git
 cd CompTiaSecGame
 ```
 
