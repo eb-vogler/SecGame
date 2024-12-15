@@ -1,0 +1,86 @@
+{
+    "office_introduction": {
+        "sarah": [
+            "Hey, ich bin Sarah! Verantwortlich für Cybersecurity und professionelle Kaffeeverkosterin.",
+            "Nachdem du den Security-Check bestanden hast, kann ich dir ja verraten: Der USB-Stick war voller Katzenbilder... und ein harmloser Keylogger *zwinker*",
+            "Bei uns lernst du nicht nur IT-Security, sondern auch die hohe Kunst des Security-Humors!"
+        ],
+        "player_responses": [
+            "Katzenbilder UND ein Keylogger? Das nenne ich mal ein Willkommenspaket!",
+            "Puh, gut dass ich nicht drauf reingefallen bin!",
+            "Darf ich raten - das Passwort auf dem Post-it war 'Password123'?"
+        ]
+    },
+    "security_basics": {
+        "sarah": [
+            "Also, die CIA-Triade ist das Fundament der IT-Sicherheit. Nein, nicht DIE CIA - obwohl die auch wichtig sind!",
+            "Confidentiality, Integrity, Availability. Oder wie ich sage: Kann Ich Arbeiten?",
+            "Wenn eines davon fehlt, haben wir ein Problem. Wie beim Kaffeeautomaten - der muss vertraulich (nur für Mitarbeiter), integer (kein verwässerter Kaffee) und verfügbar (IMMER!) sein."
+        ],
+        "player_responses": [
+            "Die CIA-Triade ist also wie ein dreibeiniger Bürostuhl?",
+            "Kaffee-Security verstehe ich! Besonders die Verfügbarkeit...",
+            "Moment, notiere ich mir gleich auf einem Post-it... oh, warte..."
+        ]
+    },
+    "password_policy": {
+        "sarah": [
+            "Weißt du, was der häufigste Grund für Passwort-Resets ist? 'Mein Hund hat mein Post-it gefressen!'",
+            "Wir hatten mal einen Mitarbeiter, der sein Passwort als Tattoo hatte. Sehr sicher - bis zur nächsten Änderung!",
+            "Ein komplexes Passwort ist wie ein guter Witz - schwer zu knacken, aber wenn man es erstmal hat..."
+        ],
+        "player_responses": [
+            "Dann war das Tattoo quasi ein permanentes Post-it?",
+            "Immerhin besser als 'password1234'... oder?",
+            "Multi-Faktor wäre praktischer gewesen als das Tattoo!"
+        ]
+    },
+    "incident_response": {
+        "sarah": [
+            "In der IT-Security ist es wie beim Kochen: Manchmal brennt's, aber Panik macht's nur schlimmer!",
+            "Unser Incident Response Plan ist wie ein Kochbuch - Schritt für Schritt zur Lösung. Nur mit weniger Butter.",
+            "Der Unterschied zwischen einem Incident und einer Katastrophe? Meistens nur die Reaktion darauf!"
+        ],
+        "player_responses": [
+            "Also quasi 'Keep Calm and Incident Response'?",
+            "Und was ist das Rezept gegen Ransomware?",
+            "Backups sind wie eine Feuerlöscher-Sammlung?"
+        ]
+    },
+    "physical_security": {
+        "sarah": [
+            "Siehst du die Kameras? Die sind nicht zur Überwachung der Kaffeepausen... obwohl, manchmal schon.",
+            "Tailgating ist übrigens NICHT, wenn man dem Pizzaboten folgt... auch wenn das verlockend ist.",
+            "Die beste Firewall nützt nichts, wenn jemand einfach den Server unterm Arm mitnimmt!"
+        ],
+        "player_responses": [
+            "Also keine Pizza-Verfolgung mehr, verstanden!",
+            "Und ich dachte, Tailgating wäre eine Grillparty...",
+            "Physische Sicherheit: Wenn 'chmod 777' nicht das größte Problem ist!"
+        ]
+    },
+    "network_security": {
+        "sarah": [
+            "Ein offenes WLAN ist wie eine Party ohne Türsteher - könnte lustig werden, ist aber keine gute Idee!",
+            "Netzwerksegmentierung ist wie eine WG: Nicht jeder muss wissen, was im Bad passiert.",
+            "Unsere Firewall ist wie meine Kaffeemaschine: Streng konfiguriert und duldet keine Ausnahmen!"
+        ],
+        "player_responses": [
+            "Dann ist VPN wie eine VIP-Liste für die Party?",
+            "Und DMZ ist sowas wie der Gemeinschaftsraum?",
+            "Hoffentlich ist die Firewall weniger zickig als die Kaffeemaschine..."
+        ]
+    },
+    "security_culture": {
+        "sarah": [
+            "Security Awareness ist wie Zähneputzen - manchmal lästig, aber besser als die Alternative!",
+            "Mein Lieblings-Security-Motto: 'Trust, but verify'. Wie bei Blinddates, nur mit Patches.",
+            "Weißt du, warum Hacker es so schwer haben? Weil wir paranoid UND stolz darauf sind!"
+        ],
+        "player_responses": [
+            "Paranoia als Berufskrankheit oder Qualifikation?",
+            "Also ist 'gesundes Misstrauen' eine Kernkompetenz?",
+            "Trust, but verify... gilt das auch für die Kantine?"
+        ]
+    }
+}

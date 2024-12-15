@@ -1,0 +1,591 @@
+{
+    "intro": {
+        "text": "Der Firmeneingang von SecureTech sieht beeindruckend aus. Hochmoderne Sicherheitstüren, Kameras und ein aufmerksamer Wachmann. Eine Frau mit einem 'Security ist kein Zufall' T-Shirt kommt auf dich zu.\n\n'Hi! Du musst {name} sein, unser neuer Security Analyst! Ich bin Sarah, deine Mentorin. Erste Lektion: Wie kommst du rein?'",
+        "choices": [
+            {
+                "text": "Badge an den Scanner halten?",
+                "next_scene": "intro_badge_scanner"
+            },
+            {
+                "text": "Dem Wachmann meinen Ausweis zeigen?",
+                "next_scene": "intro_security_check"
+            },
+            {
+                "text": "Sarah nach dem Prozess fragen?",
+                "next_scene": "intro_smart_move"
+            }
+        ]
+    },
+    "intro_badge_scanner": {
+        "text": "Sarah hebt eine Augenbraue. 'Badge? Welchen Badge? Du bist doch gerade erst angekommen! Lektion 1: Vertraue niemandem - nicht mal dir selbst.'",
+        "choices": [
+            {
+                "text": "Stimmt, besser nachfragen!",
+                "next_scene": "intro_security_process"
+            },
+            {
+                "text": "Ups, Security-Fail am ersten Tag...",
+                "next_scene": "intro_security_process"
+            }
+        ]
+    },
+    "intro_security_check": {
+        "text": "'Gute Idee, aber nicht ganz. Der Ausweis allein reicht nicht - wir nutzen Mehr-Faktor-Authentifizierung. Aber hey, du denkst in die richtige Richtung!'",
+        "choices": [
+            {
+                "text": "Wie läuft der korrekte Prozess ab?",
+                "next_scene": "intro_security_process"
+            }
+        ]
+    },
+    "intro_smart_move": {
+        "text": "'PERFEKT!' Sarah strahlt. 'Das ist genau die richtige Einstellung - erst denken, dann handeln. In der IT-Security können vorschnelle Aktionen... sagen wir mal... interessante Folgen haben.'",
+        "choices": [
+            {
+                "text": "Wie ist der richtige Prozess?",
+                "next_scene": "intro_security_process"
+            }
+        ]
+    },
+    "intro_security_process": {
+        "text": "'Also', Sarah erklärt, 'für neue Mitarbeiter gilt:\n\n1. Identifikation beim Empfang\n2. Temporärer Besucherausweis\n3. Begleitung durch einen Mentor\n\nUnd natürlich...?'",
+        "choices": [
+            {
+                "text": "Alles dokumentieren?",
+                "next_scene": "intro_documentation"
+            },
+            {
+                "text": "Den Ausweis sichtbar tragen?",
+                "next_scene": "morning_arrival"
+            },
+            {
+                "text": "Nach dem WLAN-Passwort fragen?",
+                "next_scene": "intro_wifi_lesson"
+            }
+        ]
+    },
+    "intro_documentation": {
+        "text": "'Dokumentation! Du lernst schnell!' Sarah macht eine theatralische Geste. 'In der Security gilt: Wenn es nicht dokumentiert ist, ist es nie passiert. Aber jetzt erstmal...'",
+        "choices": [
+            {
+                "text": "...rein ins Gebäude?",
+                "next_scene": "morning_arrival"
+            }
+        ]
+    },
+    "intro_wifi_lesson": {
+        "text": "Sarah schüttelt lachend den Kopf. 'WLAN ist das geringste deiner Probleme! Erstmal müssen wir dich sicher ins Gebäude bekommen. Aber keine Sorge, zum WLAN kommen wir noch - mit allen Security-Policies!'",
+        "choices": [
+            {
+                "text": "Oh, stimmt - erst die Basics!",
+                "next_scene": "morning_arrival"
+            }
+        ]
+    },
+    "morning_arrival": {
+        "text": "Nach dem Sicherheitscheck steht ihr in der modern eingerichteten Lobby. Sarah grinst und deutet auf die firmeneigene Café-Ecke.\n\n'So, jetzt wo wir die erste Security-Hürde gemeistert haben - Kaffee?'",
+        "choices": [
+            {
+                "text": "Ja, bitte! Ohne Kaffee keine Cybersecurity!",
+                "next_scene": "coffee_chat"
+            },
+            {
+                "text": "Nein danke, ich bin schon aufgeregt genug!",
+                "next_scene": "office_tour"
+            }
+        ]
+    },
+    "availability_lesson": {
+        "text": "'Genau! Redundanz ist der Schlüssel zur Verfügbarkeit', erklärt Sarah. 'Doppelte Stromversorgung, Backup-Systeme, gespiegelte Daten. Wie beim Kaffeeautomaten - einer ist kaputt, springt der andere ein!'",
+        "choices": [
+            {
+                "text": "Availability - der dritte Teil der CIA-Triade?",
+                "next_scene": "cia_overview"
+            },
+            {
+                "text": "Klingt teuer...",
+                "next_scene": "cost_vs_security"
+            }
+        ]
+    },
+    "cia_overview": {
+        "text": "'Ah, du kennst die CIA-Triade! Also nochmal zum Mitschreiben:\n\n- Confidentiality: Daten nur für Befugte\n- Integrity: Daten sind unverfälscht\n- Availability: Systeme sind verfügbar\n\nWelcher Aspekt interessiert dich am meisten?'",
+        "choices": [
+            {
+                "text": "Wie schützen wir die Vertraulichkeit?",
+                "next_scene": "confidentiality_deep"
+            },
+            {
+                "text": "Wie stellen wir Integrität sicher?",
+                "next_scene": "integrity_check"
+            },
+            {
+                "text": "Lass uns über Kontrollen sprechen",
+                "next_scene": "controls_intro"
+            }
+        ]
+    },
+    "confidentiality_deep": {
+        "text": "'Vertraulichkeit ist wie ein Geheimnis - nur die richtigen Leute dürfen es kennen. Wir nutzen:\n\n- Verschlüsselung\n- Zugriffskontrollen\n- Das Minimalprinzip\n\nApropos, da vorne arbeitet unser Encryption-Team...'",
+        "choices": [
+            {
+                "text": "Was ist das Minimalprinzip?",
+                "next_scene": "least_privilege"
+            },
+            {
+                "text": "Weiter zu den Kontrollen",
+                "next_scene": "controls_intro"
+            }
+        ]
+    },
+    "integrity_check": {
+        "text": "Sarah zeigt auf einen Monitor mit kryptischen Zahlen. 'Das sind Hash-Werte. Sie garantieren die Integrität unserer Systeme. Wie ein digitaler Fingerabdruck - kleinste Änderung, komplett anderer Hash!'",
+        "choices": [
+            {
+                "text": "Wie erkennen wir Manipulation?",
+                "next_scene": "detective_controls"
+            },
+            {
+                "text": "Weiter zu den Kontrollen",
+                "next_scene": "controls_intro"
+            }
+        ]
+    },
+    "controls_intro": {
+        "text": "'Zeit für Security Controls 101! Wir haben drei Haupttypen:\n\n- Technische Kontrollen (Firewalls, Verschlüsselung)\n- Administrative Kontrollen (Richtlinien, Schulungen)\n- Physische Kontrollen (Zugangskarten, Kameras)\n\nUnd dann noch nach Funktion...'",
+        "choices": [
+            {
+                "text": "Erzähl mir von den Funktionen",
+                "next_scene": "control_functions"
+            },
+            {
+                "text": "Beispiele aus der Praxis?",
+                "next_scene": "control_examples"
+            }
+        ]
+    },
+    "control_functions": {
+        "text": "'Controls gibt es in verschiedenen Geschmacksrichtungen:\n\n- Präventiv: Verhindern Probleme\n- Erkennend: Finden Probleme\n- Korrigierend: Beheben Probleme\n\nWie beim Autofahren: Bremsen, Sensoren und Airbags!'",
+        "choices": [
+            {
+                "text": "Praktische Beispiele?",
+                "next_scene": "control_examples"
+            },
+            {
+                "text": "Zur Abschlussbesprechung",
+                "next_scene": "day_summary"
+            }
+        ]
+    },
+    "control_examples": {
+        "text": "Sarah führt dich durch verschiedene Bereiche:\n\n'Siehst du?\n- Firewall = präventiv\n- Überwachungskameras = erkennend\n- Backup-Systeme = korrigierend\n\nAlles klar soweit?'",
+        "choices": [
+            {
+                "text": "Ja, lass uns zusammenfassen",
+                "next_scene": "day_summary"
+            },
+            {
+                "text": "Nochmal zu den Grundlagen",
+                "next_scene": "cia_overview"
+            }
+        ]
+    },
+    "day_summary": {
+        "text": "'Fantastisch! Du hast die Security-Grundlagen in Rekordzeit gelernt:\n\n- CIA-Triade verstanden\n- Kontrollen kennengelernt\n- Erste Praxiserfahrung gesammelt\n\nBereit für den Praxis-Test morgen?'",
+        "choices": [
+            {
+                "text": "Absolut! Bring it on!",
+                "next_scene": "day_complete"
+            },
+            {
+                "text": "Kann ich nochmal was nachschauen?",
+                "next_scene": "knowledge_base"
+            }
+        ]
+    },
+    "security_training": {
+        "text": "'Zeit für ein paar praktische Szenarien', sagt Sarah und öffnet ein Tablet. 'Als Security Analyst wirst du oft schnelle Entscheidungen treffen müssen. Bereit?'",
+        "choices": [
+            {
+                "text": "Ja, lass uns anfangen!",
+                "next_scene": "scenario_one"
+            },
+            {
+                "text": "Können wir die Grundlagen nochmal durchgehen?",
+                "next_scene": "basics_review"
+            }
+        ]
+    },
+    "scenario_one": {
+        "text": "Sarah zeigt auf einen Monitor: 'Alarm! Jemand hat gerade unsere Unternehmenswebsite verändert. Was wurde hier primär verletzt?'",
+        "choices": [
+            {
+                "text": "Vertraulichkeit - Daten könnten gestohlen sein",
+                "next_scene": "scenario_one_wrong"
+            },
+            {
+                "text": "Integrität - Die Website wurde manipuliert",
+                "next_scene": "scenario_one_correct"
+            },
+            {
+                "text": "Verfügbarkeit - Die Seite könnte down sein",
+                "next_scene": "scenario_one_wrong"
+            }
+        ]
+    },
+    "scenario_one_correct": {
+        "text": "'Exakt!' Sarah nickt anerkennend. 'Wenn Daten verändert werden, ist das ein Integritätsproblem. Die CIA-Triade ist der Grundpfeiler unserer Arbeit. Bereit für das nächste Szenario?'",
+        "choices": [
+            {
+                "text": "Bring it on!",
+                "next_scene": "scenario_two"
+            }
+        ]
+    },
+    "scenario_two": {
+        "text": "'Du siehst diese Kundendatenbank? Die Marketing-Abteilung hat Zugriff auf die vollständigen Kreditkartendaten. Was ist hier das Problem?'",
+        "choices": [
+            {
+                "text": "PCI DSS Compliance-Verstoß",
+                "next_scene": "scenario_two_correct"
+            },
+            {
+                "text": "Performance-Problem",
+                "next_scene": "scenario_two_wrong"
+            },
+            {
+                "text": "Backup-Fehler",
+                "next_scene": "scenario_two_wrong"
+            }
+        ]
+    },
+    "scenario_two_correct": {
+        "text": "'Sehr gut! Compliance-Risiken sind ernst zu nehmen. PCI DSS schreibt vor, dass nur autorisierte Mitarbeiter Zugriff auf Kreditkartendaten haben dürfen. Was würdest du empfehlen?'",
+        "choices": [
+            {
+                "text": "Datenmaskierung implementieren",
+                "next_scene": "data_protection"
+            },
+            {
+                "text": "Zugriff komplett sperren",
+                "next_scene": "data_protection"
+            }
+        ]
+    },
+    "data_protection": {
+        "text": "'Lass uns über Datenschutz sprechen. Wir haben Daten:\n- In der Datenbank (at rest)\n- Beim Senden (in transit)\n- Bei der Verarbeitung (in use)\n\nWelche sind am verwundbarsten?'",
+        "choices": [
+            {
+                "text": "Daten während der Übertragung",
+                "next_scene": "data_transit_lesson"
+            },
+            {
+                "text": "Gespeicherte Daten",
+                "next_scene": "data_rest_lesson"
+            }
+        ]
+    },
+    "control_types": {
+        "text": "Sarah zeigt auf verschiedene Sicherheitsmaßnahmen:\n\n'Wir haben hier:\n- Firewall (technisch)\n- Sicherheitsrichtlinien (administrativ)\n- Zugangskarten (physisch)\n\nWas fehlt?'",
+        "choices": [
+            {
+                "text": "Präventive Kontrollen",
+                "next_scene": "preventive_discussion"
+            },
+            {
+                "text": "Erkennende Kontrollen",
+                "next_scene": "detective_discussion"
+            },
+            {
+                "text": "Abschreckende Kontrollen",
+                "next_scene": "deterrent_discussion"
+            }
+        ]
+    },
+    "deterrent_discussion": {
+        "text": "'Genau! Abschreckung ist wichtig. Siehst du das Warnschild dort? 'Videoüberwachung im Einsatz' - das soll potenzielle Angreifer abschrecken. Was könnte online ähnlich wirken?'",
+        "choices": [
+            {
+                "text": "Sicherheitshinweise auf der Login-Seite",
+                "next_scene": "final_assessment"
+            },
+            {
+                "text": "Aktivitätsprotokollierung ankündigen",
+                "next_scene": "final_assessment"
+            }
+        ]
+    },
+    "final_assessment": {
+        "text": "'Zum Abschluss: Ein Server wurde kompromittiert. Du siehst:\n\n1. Ungewöhnliche ausgehende Verbindungen\n2. Veränderte Systemdateien\n3. Hohe CPU-Last\n\nWas überprüfst du zuerst?'",
+        "choices": [
+            {
+                "text": "Integrität der Systemdateien",
+                "next_scene": "assessment_complete"
+            },
+            {
+                "text": "Netzwerkverbindungen",
+                "next_scene": "assessment_complete"
+            },
+            {
+                "text": "System-Performance",
+                "next_scene": "assessment_review"
+            }
+        ]
+    },
+
+    "coffee_chat": {
+        "text": "Sarah reicht dir einen Becher mit der Aufschrift 'Threat Hunter in Training'. Ihr setzt euch in eine gemütliche Ecke der Kaffeebar.\n\n'So, während wir hier sitzen - was weißt du schon über IT-Security?'",
+        "choices": [
+            {
+                "text": "Die CIA-Triade ist die Grundlage, oder?",
+                "next_scene": "cia_intro"
+            },
+            {
+                "text": "Erstmal nicht viel, aber ich lerne schnell!",
+                "next_scene": "security_basics"
+            },
+            {
+                "text": "Können wir die Büroräume anschauen?",
+                "next_scene": "office_tour"
+            }
+        ]
+    },
+    "cia_intro": {
+        "text": "'Ausgezeichnet!' Sarah strahlt. 'Die CIA-Triade ist wie eine gute Tasse Kaffee:\n- Vertraulich: Nur für die richtigen Leute\n- Integer: Unverfälscht, ohne schlechte Zusätze\n- Verfügbar: Genau dann, wenn man sie braucht\n\nWollen wir das im Büro praktisch sehen?'",
+        "choices": [
+            {
+                "text": "Ja, zeig mir die Anwendung!",
+                "next_scene": "office_tour"
+            },
+            {
+                "text": "Erst mehr Grundlagen bitte",
+                "next_scene": "security_basics"
+            }
+        ]
+    },
+    "security_basics": {
+        "text": "'Keine Sorge', zwinkert Sarah, 'Jeder fängt mal an! Die wichtigsten Basics sind:\n\n1. Zero Trust - Vertraue niemandem\n2. Defense in Depth - Mehrere Schutzschichten\n3. Least Privilege - Minimale Rechte\n\nBereit für die Praxis?'",
+        "choices": [
+            {
+                "text": "Ja, lass uns das Büro erkunden!",
+                "next_scene": "office_tour"
+            },
+            {
+                "text": "Erzähl mir mehr von der CIA-Triade",
+                "next_scene": "cia_intro"
+            }
+        ]
+    },
+    "security_lesson_wifi": {
+        "text": "Sarah zieht eine Augenbraue hoch.\n\n'Hmmm... private Geräte im Firmennetz? Das könnte ein kleines Sicherheitsproblem sein. Möchtest du erklären warum?'",
+        "choices": [
+            {
+                "text": "Private Geräte könnten Malware einschleppen",
+                "next_scene": "sarah_impressed"
+            },
+            {
+                "text": "Ups, stimmt. Das verstößt gegen das Minimalprinzip!",
+                "next_scene": "sarah_impressed"
+            },
+            {
+                "text": "Ach komm, was soll schon passieren?",
+                "next_scene": "security_fail"
+            }
+        ]
+    },
+    "sarah_impressed": {
+        "text": "'Sehr gut! Du kennst dich ja schon aus!' Sarah lächelt anerkennend. 'Dann können wir ja zu deinem Arbeitsplatz gehen. Da wartet schon dein erster echter Security-Test auf dich!'",
+        "choices": [
+            {
+                "text": "Ich bin bereit! Bring it on!",
+                "next_scene": "desk_challenge"
+            },
+            {
+                "text": "Ein Test? Jetzt schon?",
+                "next_scene": "desk_challenge"
+            }
+        ]
+    },
+    "desk_challenge": {
+        "text": "An deinem neuen Schreibtisch angekommen, siehst du:\n\n- Einen ausgeschalteten Laptop\n- Ein Post-it mit Zugangsdaten\n- Eine freie Netzwerkdose\n- Ein USB-Stick mit der Aufschrift 'Willkommensgeschenk :)'\n\nSarah: 'Ok, wie gehst du vor?'",
+        "choices": [
+            {
+                "text": "Laptop einschalten und mit Post-it-Daten anmelden",
+                "next_scene": "security_fail"
+            },
+            {
+                "text": "USB-Stick einstecken und schauen was drauf ist",
+                "next_scene": "security_fail"
+            },
+            {
+                "text": "Erst IT fragen, ob das mein Setup ist",
+                "next_scene": "security_win"
+            },
+            {
+                "text": "Netzwerkkabel einstecken und loslegen",
+                "next_scene": "security_fail"
+            }
+        ]
+    },
+    "security_win": {
+        "text": "'AUSGEZEICHNET!' Sarah klatscht begeistert. 'Das war natürlich ein Test. Niemals ungeprüfte Hardware nutzen oder verdächtige USB-Sticks einstecken!'\n\nSie holt einen Laptop aus ihrem Büro. 'DAS ist dein echter Arbeitsplatz. Und dein erster Arbeitstag beginnt... jetzt!'",
+        "choices": [
+            {
+                "text": "Super, lass uns anfangen!",
+                "next_scene": "first_task"
+            }
+        ]
+    },
+    "security_fail": {
+        "text": "'STOPP!' Sarah hebt dramatisch die Hände. 'Das hätte böse enden können! In der IT-Sicherheit vertrauen wir nichts und niemandem - nicht mal Willkommensgeschenken.'\n\nSie grinst. 'Aber keine Sorge, das war nur ein Test. Dein echter Laptop wartet in meinem Büro.'",
+        "choices": [
+            {
+                "text": "Puh, Lektion gelernt! Zero Trust ist das Zauberwort.",
+                "next_scene": "first_task"
+            },
+            {
+                "text": "Oh man, dabei sah das USB-Stick-Geschenk so verlockend aus...",
+                "next_scene": "first_task"
+            }
+        ]
+    },
+    "office_tour": {
+        "text": "Sarah führt dich durch das Büro.\n\n'Also, hier ist unsere kleine Security-Festung! Links sind die Entwickler - erkennbar an den vielen Energy-Drinks. Rechts das Management - erkennbar am teuren Kaffee. Und da vorne...'\n\nPlötzlich klingelt laut ein Alarm!",
+        "choices": [
+            {
+                "text": "Sofort in Deckung gehen!",
+                "next_scene": "tour_alarm_reaction"
+            },
+            {
+                "text": "Nach dem Notfallplan fragen",
+                "next_scene": "tour_alarm_smart"
+            },
+            {
+                "text": "Erstmal entspannt weitergehen",
+                "next_scene": "tour_alarm_fail"
+            }
+        ]
+    },
+    "tour_alarm_fail": {
+        "text": "'Nicht so entspannt!' Sarah zieht dich zur Seite. 'Das war der Intrusion Detection Alarm. Könnte ein Test sein - oder ein echter Einbruchsversuch. Bei Sicherheitsvorfällen müssen wir IMMER reagieren!'",
+        "choices": [
+            {
+                "text": "Verstanden! Was ist der korrekte Ablauf?",
+                "next_scene": "alarm_procedure"
+            }
+        ]
+    },
+    "tour_alarm_smart": {
+        "text": "'Sehr gut!' Sarah nickt anerkennend. 'Du kennst dich mit Incident Response aus. Ja, wir haben einen detaillierten Notfallplan. Und rate mal? Das war tatsächlich nur unser täglicher Alarm-Test!'",
+        "choices": [
+            {
+                "text": "Puh! Wie läuft so ein Incident Response Plan ab?",
+                "next_scene": "alarm_procedure"
+            },
+            {
+                "text": "Täglich? Ihr nehmt Security echt ernst!",
+                "next_scene": "security_culture_talk"
+            }
+        ]
+    },
+    "tour_alarm_reaction": {
+        "text": "Sarah lacht. 'Hey, guter Instinkt! Aber das war nur unser täglicher Alarm-Test. Trotzdem - lieber einmal zu vorsichtig als einmal zu sorglos. Apropos Vorsicht...'",
+        "choices": [
+            {
+                "text": "Was machen wir bei einem echten Alarm?",
+                "next_scene": "alarm_procedure"
+            },
+            {
+                "text": "Täglich? Das ist ja wie im Fort Knox hier!",
+                "next_scene": "security_culture_talk"
+            }
+        ]
+    },
+    "alarm_procedure": {
+        "text": "'Also', Sarah holt eine schicke Infografik hervor, 'hier ist unser Incident Response Plan:\n\n1. Situation einschätzen\n2. Team alarmieren\n3. System isolieren\n4. Beweise sichern\n5. Problem beheben\n\nUnd das Wichtigste?'",
+        "choices": [
+            {
+                "text": "Ruhe bewahren?",
+                "next_scene": "server_room_tour"
+            },
+            {
+                "text": "Alles dokumentieren?",
+                "next_scene": "server_room_tour"
+            },
+            {
+                "text": "Den CEO anrufen?",
+                "next_scene": "alarm_procedure_lesson"
+            }
+        ]
+    },
+    "alarm_procedure_lesson": {
+        "text": "Sarah schüttelt den Kopf. 'Der CEO erfährt es schon früh genug - aber erst wenn wir die Lage eingeschätzt haben. Panik ist keine Security-Strategie!'",
+        "choices": [
+            {
+                "text": "Einleuchtend! Wie geht die Tour weiter?",
+                "next_scene": "server_room_tour"
+            }
+        ]
+    },
+    "server_room_tour": {
+        "text": "'Und hier', Sarah zeigt auf eine massive Tür, 'ist unser Serverraum. Zutritt nur mit...' Sie deutet auf das Zugangsterminal.",
+        "choices": [
+            {
+                "text": "Biometrische Authentifizierung?",
+                "next_scene": "server_auth_lesson"
+            },
+            {
+                "text": "Zugangskarte und PIN?",
+                "next_scene": "server_auth_correct"
+            },
+            {
+                "text": "Dem magischen Wort 'Bitte'?",
+                "next_scene": "server_auth_joke"
+            }
+        ]
+    },
+    "server_auth_lesson": {
+        "text": "'Biometrie nutzen wir auch, aber nicht hier. Zu kompliziert bei Notfällen. Wir setzen auf Zwei-Faktor: Karte plus PIN.'",
+        "choices": [
+            {
+                "text": "Smart! Einfach aber sicher.",
+                "next_scene": "server_room_inside"
+            }
+        ]
+    },
+    "server_auth_correct": {
+        "text": "'Genau! Zwei-Faktor-Authentifizierung. Etwas, das du hast (Karte) und etwas, das du weißt (PIN). Simple but effective!'",
+        "choices": [
+            {
+                "text": "Können wir reinschauen?",
+                "next_scene": "server_room_inside"
+            }
+        ]
+    },
+    "server_auth_joke": {
+        "text": "Sarah grinst. 'Das magische Wort ist tatsächlich eine 6-stellige PIN. Social Engineering funktioniert hier nicht - auch nicht mit guten Manieren!'",
+        "choices": [
+            {
+                "text": "War einen Versuch wert! Wie kommen wir rein?",
+                "next_scene": "server_room_inside"
+            }
+        ]
+    },
+    "server_room_inside": {
+        "text": "Im Serverraum summen die Lüfter. 'Hier schlägt das Herz unserer IT. Und wie bei einem echten Herzen haben wir...'",
+        "choices": [
+            {
+                "text": "Redundante Systeme?",
+                "next_scene": "availability_lesson"
+            },
+            {
+                "text": "Strikte Zugangskontrolle?",
+                "next_scene": "confidentiality_lesson"
+            },
+            {
+                "text": "Ständige Überwachung?",
+                "next_scene": "monitoring_lesson"
+            }
+        ]
+    }
+}
