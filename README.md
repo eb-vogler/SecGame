@@ -22,7 +22,7 @@ Ein textbasiertes Lernspiel zur Vorbereitung auf die Cybersecurity. Die Spieler 
 1. Repository klonen:
 ```bash
 git clone https://github.com/yourusername/SecGame.git
-cd CompTiaSecGame
+cd SecGame
 ```
 
 2. Virtuelle Umgebung erstellen und aktivieren:
@@ -132,7 +132,7 @@ A text-based learning game to prepare for the Cybersecurity. Players take on the
 1. Clone repository:
 ```bash
 git clone https://github.com/yourusername/SecGame.git
-cd CompTiaSecGame
+cd SecGame
 ```
 
 2. Create and activate virtual environment:
