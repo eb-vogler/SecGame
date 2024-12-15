@@ -1,4 +1,4 @@
-# CompTIA SecGame
+#  SecGame
 
 Ein textbasiertes Lernspiel zur Vorbereitung auf die CompTIA Security+ Zertifizierung. Die Spieler schlüpfen in die Rolle eines Security Analysten und lernen durch praktische Szenarien und interaktive Geschichten die Grundlagen der IT-Sicherheit.
 
@@ -109,7 +109,7 @@ Szenen werden in JSON-Format definiert. Ein Beispiel:
 - [ ] Python-Scripting-Aufgaben
 
 
-# CompTIA SecGame
+#  SecGame
 
 A text-based learning game to prepare for the CompTIA Security+ certification. Players take on the role of a Security Analyst and learn IT security fundamentals through practical scenarios and interactive stories.
 
