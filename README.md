@@ -105,7 +105,6 @@ Szenen werden in JSON-Format definiert. Ein Beispiel:
 ## 📝 Geplante Features
 
 - [ ] Grafische Benutzeroberfläche
-- [ ] Integration von YARA-Regeln
 - [ ] Python-Scripting-Aufgaben
 
 
@@ -182,8 +181,6 @@ ComptiaSecGame/
 The game is based on a text-based user interface where players navigate through various scenarios and make decisions. The main components are:
 
 - Story Mode: Follows a Security Analyst through their workday
-- Practice Mode: Separate exercises for specific security topics
-- Knowledge Base: Reference guide for security concepts
 
 ## 🛠️ Development
 
@@ -215,7 +212,8 @@ Scenes are defined in JSON format. Example:
 ## 📝 Planned Features
 
 - [ ] Graphical User Interface
-- [ ] YARA rules integration
+- [ ] Practice Mode: Separate exercises for specific security topics
+- [ ] Knowledge Base: Reference guide for security concepts
 - [ ] Python scripting tasks
 
 
